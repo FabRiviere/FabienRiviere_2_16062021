@@ -1,0 +1,39 @@
+/* Je mets le police Raleway en lien avec l'url dans html*/
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*header */
+/* J'aligne mes éléments de nav et le logo */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+/* J'aligne mes élements de nav entre eux et supprime les puces */
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+/* J'espace mes éléments et leur donne leur couleur */
+nav li 
+{
+    margin: 0 20px ;
+    color: #0065fc;
+}
+/* J'enléve le soulignement des liens/ancres */
+nav li a 
+{
+    text-decoration: none;
+}
+/* Je mets une couleur grise au 2éme élement */
+nav li #activities
+{
+    color: #868282;
+}
