@@ -4,9 +4,13 @@ body
 {
     font-family: 'Raleway', sans-serif;
 }
+/* Marges extérieures sur tous les titres en h2 */
+h2
+{
+    margin: 20px 0 0 20px;
+}
 
-
-/*header */
+/*HEADER */
 /* J'aligne mes éléments de nav et le logo */
 nav
 {
@@ -36,4 +40,149 @@ nav li a
 nav li #activities
 {
     color: #868282;
+}
+
+/*MAIN */
+
+/* Modification du titre en changeant la taille du texte et en mettant une marge ext. gauche */ 
+
+h1
+{
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+/* Marge ext. gauche pour alignement du paragraphe avec le titre et contenu de la page */
+
+#actions 
+{
+    margin-left: 50px;
+}
+
+
+/* barre de recherche*/
+/* Voir pour dimensions suivant alignement avec les filtres */
+
+.search
+{
+    display: flex;
+    margin-left: 50px;
+}
+
+#search-ico
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+#search-text 
+{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #f2f2f2;
+    padding-left: 20px;
+}
+
+#search-button
+{
+    color: #f2f2f2;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 120px;
+}
+
+/* filtres */
+
+.filters
+{
+    width: 60%;
+    height: 40px;   
+    margin-top: 40px;
+}
+
+/* textes des éléments de filtres */
+.filters p
+{
+    margin: 2px 2px 2px 2px;
+    padding: 1px 10px 1px 10px;     
+}
+
+/* Liste des filtres */
+.filters ul 
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;    
+}
+
+/* Eléments de liste des filtres */
+.filters li 
+{
+    display: flex;
+    align-items: center;      
+    list-style-type: none;
+    margin-left: 3%;    
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;   
+}
+
+/* On change l'apparence des éléments au passage de la souris dessus */
+.filters li:hover
+{
+    background-color: #0065fc;
+    color: red;
+}
+
+/* Icones des filtres */
+.ico-filters
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#0065fc;
+    background-color: #deebff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px 50px 50px;       
+}
+
+/* on change également l'apparence des icones au survol de la souris */
+.ico-filters:hover
+{
+    background-color: #deebff;
+    color: red;
+}
+
+/* Paragraphe et icone d'information sous les filtres */
+#information
+{
+    display: flex;
+    align-items: center;
+    margin: 30px 0 30px 50px;   
+}
+
+/* icone d'information */
+#information i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;       
+}
+
+/* Texte suivant l'icone "information" */ 
+#information p
+{
+    font-size: 1.2em;    
 }

@@ -14,7 +14,7 @@
     <title>Reservia</title>
 </head>
 <body>
-    <!--header-->
+    <!--HEADER-->
     <header>
         <nav> 
             <img src="./images/logo/Reservia.svg" alt="logo Reservia"/>
@@ -31,3 +31,65 @@
             </ul>
         </nav>
     </header>
+
+    <!--MAIN-->
+    <main>
+    <!--Section Actions -Recherche et Filtres-->
+        <section>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p id="actions">En plein centre ville ou en pleine nature</p>
+
+    <!-- Barre de recherche-->
+        
+            <form class="search"> 
+            
+                    <i id="search-ico"class="fas fa-map-marker-alt"></i> 
+                
+                    <input id="search-text" type="text" name="search" value="Marseille, France"/>
+                
+                    <input id="search-button" type="submit" name="submit" value="Rechercher" />
+                            
+            </form>
+        
+        <!-- Filtres-->
+        <!-- Voir si utile de mettre les paragraphes en span ? -->
+            <div class="filters">
+                
+                <ul>
+                    <p>Filtres </p>
+                    <li>
+                        <span class="ico-filters"> 
+                            <i class="fas fa-money-bill-wave"> </i> 
+                        </span>
+                        <p>Économique</p>
+                    </li>
+                    <li>
+                        <span class="ico-filters">
+                            <i class="fas fa-child"></i>
+                        </span>
+                        <p>Familial</p>
+                    </li>
+                    <li>
+                        <span class="ico-filters">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <p>Romantique</p>
+                    </li>
+                    <li>
+                        <span class="ico-filters">
+                            <i class="fas fa-dog"></i>
+                        </span>
+                        <p>Animaux autorisés</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Paragraphe information -->
+            <div id="information">
+                <span>
+                    <i class="fas fa-info"></i>
+                </span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+            
+        </section>
