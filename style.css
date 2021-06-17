@@ -329,3 +329,103 @@ h1
 {
     padding: 0 20px 40px 20px;
 }
+
+/*SECTION ACTIVITÉS */
+
+/* Mise en page de la section "Activités" */
+
+/* Dimensions et marges sur la section "Activités" */
+.activities
+{
+    width: 99%;
+    margin: 50px 50px 50px 50px;
+    padding: 20px 50px 20px 0;     
+}
+
+/* Alignement des éléments, largeur, couleur de fond, marge et arrondis des bordures */
+.activities-article
+{
+    display: inline-block;
+    width: 23%;
+    background-color: #ffffff;
+    margin: 20px 20px 20px 0;   
+    border-radius: 20px ; 
+}
+
+/* Alignement du titre */
+.activities-article h3
+{  
+   margin-left: 20px;
+}
+
+/* Bordures et arrondis des articles seuls (grandes images) */
+.only
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+}
+
+/* Bordures, arrondis et marges des articles situés en haut (avec 2 articles/ colonne) */
+.activities-article-top
+{
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* Bordures, arrondis et marges des articles situés en bas  (avec 2 articles/ colonne) */
+.activities-article-bottom
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* Taille des images plus petites */
+.img-activities
+{
+    width: 100% ;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Taille des images plus grandes */
+.img-activities-height
+{
+    width: auto; 
+    height: 480px;
+    max-width: 100%;
+    border-radius: 20px 20px 0  0; 
+}
+
+/*FOOTER*/
+
+/* Alignements des éléments présents dans le footer, et on donne une couleur de fond */
+footer
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+}
+
+/* Marges extérieures appliquées à chaque élements */
+
+.footer-field
+{
+    margin: 20px 280px 20px 10px;
+}
+
+/* Enlevement des puces de la liste et gestion des interlignes */
+
+.footer-field li
+{
+    list-style: none;
+    line-height: 2em;
+}
+
+/* Marge extérieure gauche des titres pour aligner avec les éléments de liste */ 
+
+.footer-field h4
+{
+    margin-left: 40px;
+}
