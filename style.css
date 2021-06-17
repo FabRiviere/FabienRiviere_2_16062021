@@ -186,3 +186,146 @@ h1
 {
     font-size: 1.2em;    
 }
+
+/* SECTIONS HÉBERGEMENTS ET POPULAIRES */
+
+/* Mise en forme des sections "hébergements" et "populaires" et alignements entre elles */
+
+.accomodations-popular
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* SECTION HÉBERGEMENTS */
+
+/* Section "hébergements" à laquelle, on donne la couleur du fond, les dimensions, et les marges ext. & int. et arrondis */
+.accomodations
+{
+    background-color: #f2f2f2;
+    width: 75%;
+    margin-left: 50px;
+    padding: 20px 0 20px 20px;
+    border-radius: 30px;
+}
+
+/* Alignements des "articles" entre eux, envoi à la ligne, dimensions, couleur de fond, marges extérieures, bordures */
+.accomodations-article 
+{
+    display: inline-block;
+    width: 29%;
+    background-color: #ffffff;
+    margin: 20px 20px 20px 20px;
+    border: none;
+    border-radius: 20px ;       
+}
+
+/* Dimensionnement des images, bordures et marge extérieures */
+.img-accomodations 
+{
+    width: 97%;
+    height: 180px;
+    border: none;
+    border-radius: 20px 20px 0 0;
+    margin: 5px 0 5px 5px;
+}
+
+/* Mise en gras des titres des articles h3, et applications des marges intérieures et extérieures */
+.accomodations-article h3
+{
+    font-weight: bold;
+    margin: 10px 0 10px 20px;
+}
+
+/* Mise en page des paragraphes des articles pour les marges */
+.accomodations-article p
+{
+   margin: 0 0 10px 20px;
+}
+
+/* Mise en page des icônes (étoiles) de votes avec marges et couleur en "bleues" */ 
+
+.star 
+{
+    margin: 0 0 10px 20px;
+    color: #0065fc
+}
+
+/* Passage des étoiles en couleur grises */
+.star-grey
+{
+    color: #c7c3c3c5;
+}
+
+/* Modification de "Afficher plus" en bas de la section hébergements */
+#more
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/*SECTION POPULAIRES */
+
+/* Mise en forme de la section "Populaires" */
+
+/* section "populaires" à laquelle est appliquée : couleur de fond, des dimensions et marges extérieures */
+
+.popular
+{
+    background-color: #f2f2f2;
+    width: 33%;
+    margin: 0 50px 0 50px;
+    border-radius: 30px;
+}
+
+/* Titre de la section populaire (incluant titre et icone ). Alignement des 2 éléments entre eux et marge extérieure */
+#popular-title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px 50px 0 20px;
+}
+
+/* Dimensions de l'icône à coté du titre de la section "populaires" */
+
+#popular-title i
+{
+    font-size: 1.5em;
+}
+
+/* Alignements des éléments, dimensions, couleur de fond, marges extérieures et arrondis des bordures */
+.popular-article
+{
+    display: flex;    
+    width: 92%;
+    background-color: #ffffff;
+    margin: 20px 20px 50px 20px;
+    border-radius: 20px;
+}
+
+/* Modification des dimensions des images, arrondis des bordures et marges extérieures */
+.img-popular
+{
+    width: 180px;
+    height: 190px;
+    
+    border-radius: 20px 0 0 20px;
+    margin: 5px 20px 5px 5px ;
+}
+
+/* Marges intérieures sur les titres h3 des éléments */
+.popular-article h3
+{
+    
+    padding: 0 20px 0 20px;
+    margin: none;
+}
+
+/* Marges intérieures pour placement des paragraphes des éléments */
+.popular-article p
+{
+    padding: 0 20px 40px 20px;
+}
