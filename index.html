@@ -30,33 +30,49 @@
                 </li>
             </ul>
         </nav>
+
+        <nav class="mobile">
+            <div id="first-line">
+                <img src="./images/logo/Reservia.svg" alt="logo Reservia"/>
+                <a href="#">S'inscrire</a>
+            </div>
+            <div id="second-line">
+               
+                <a href="#hebergements">Hébergements</a>              
+                <a href="#activites" id="activities">Activités</a>
+            </div>
+            <hr/>
+        </nav>
     </header>
 
     <!--MAIN-->
     <main>
     <!--Section "Actions"-Recherche et Filtres-->
-        <section>
+        <section class="search-filters">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p id="actions">En plein centre ville ou en pleine nature</p>
 
     <!-- Barre de recherche-->
         
+         
             <form class="search"> 
-            
-                    <i id="search-ico"class="fas fa-map-marker-alt"></i> 
+             
+                    <i id="search-ico" class="fas fa-map-marker-alt"></i> 
                 
                     <input id="search-text" type="text" name="search" value="Marseille, France"/>
                 
                     <input id="search-button" type="submit" name="submit" value="Rechercher" />
-                            
+                    
+                    <i id="search-glass" class="fas fa-search"></i> 
             </form>
-        
+         
+
         <!-- Filtres-->
         <!-- Voir si utile de mettre les paragraphes en span ? -->
             <div class="filters">
                 
                 <ul>
-                    <p>Filtres </p>
+                    <span id="filters-title">Filtres </span>
                     <li>
                         <span class="ico-filters"> 
                             <i class="fas fa-money-bill-wave"> </i> 
@@ -86,9 +102,9 @@
 
             <!-- Paragraphe information -->
             <div id="information">
-                <span>
+                <div>
                     <i class="fas fa-info"></i>
-                </span>
+                </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
@@ -99,11 +115,13 @@
 
             <!-- Section Hebergements-->
 
-            <section class="accomodations">
-
-                <div id="hebergements">
-                    <h2>Hébergements à Marseille</h2>
-                </div>
+            <section class="accomodations-section">
+        
+            <div>
+               <h2 id="hebergements">Hébergements à Marseille</h2> <!-- Ancre du menu-->
+            </div>
+            
+            <div class="accomodations">
 
                 <div class="accomodations-article">             
                     <a href="#">
@@ -215,7 +233,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>                          
-                </div>
+            </div> 
+                 
+            </div>
 
                 <p id="more"> Afficher plus</p>
             </section>
@@ -296,68 +316,70 @@
         
         <!--Section Activités-->
 
-        <Section class="activities">
-
-            <div id="activites"> <!-- Ancre du menu-->
-                <h2>Activités à Marseille</h2>
-            </div>
-
-            <div class="activities-article">
-                <div class="only">
-                    <a href="#">
-                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="img-activities-height"/>
-                    </a>
-                    <h3>Vieux Port</h3>
-                </div>
-            </div>
-
+        <Section class="activities-section">
             
-            <div class="activities-article">
-
-                <div class="activities-article-top">
-                    <a href="#">
-                        <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="img-activities"/>
-                    </a>
-                    <h3>Fort de Pomègues</h3>
+                <div id="activites"> <!-- Ancre du menu-->
+                    <h2>Activités à Marseille</h2>
                 </div>
 
-                <div class="activities-article-bottom">   
-                    <div>
-                        <a href="#">
-                            <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="img-activities"/>
-                        </a>
-                        <h3>Îles du Frioul</h3>
-                    </div>
-                </div>  
-
-            </div>
-
-            <div class="activities-article">
-
-                <div class="only">
-                    <a href="#">
-                        <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="img-activities-height"/>
-                    </a>
-                    <h3>Parc National des Calanques</h3>
-                </div>
-            </div>
-
-            <div class="activities-article">
-
-                <div class="activities-article-top">
-                    <a href="#">
-                        <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="img-activities"/>
-                    </a>
-                    <h3>Notre-Dame-de-la-Garde</h3>
-                </div>
-
-                <div class="activities-article-bottom">
-                    <a href="#">
-                        <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="img-activities"/>
-                    </a>
-                    <h3>Parc Longchamp</h3>
-                </div>
+            <div class="activities">
                 
+                <div class="activities-article">
+                    <div class="only">
+                        <a href="#">
+                            <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="img-activities-height"/>
+                        </a>
+                        <h3>Vieux Port</h3>
+                    </div>
+                </div>
+
+                
+                <div class="activities-article">
+
+                    <div class="activities-article-top">
+                        <a href="#">
+                            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="img-activities"/>
+                        </a>
+                        <h3>Fort de Pomègues</h3>
+                    </div>
+
+                    <div class="activities-article-bottom">   
+                        <div>
+                            <a href="#">
+                                <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="img-activities"/>
+                            </a>
+                            <h3>Îles du Frioul</h3>
+                        </div>
+                    </div>  
+
+                </div>
+
+                <div class="activities-article">
+
+                    <div class="only">
+                        <a href="#">
+                            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="img-activities-height"/>
+                        </a>
+                        <h3>Parc National des Calanques</h3>
+                    </div>
+                </div>
+
+                <div class="activities-article">
+
+                    <div class="activities-article-top">
+                        <a href="#">
+                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="img-activities"/>
+                        </a>
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </div>
+
+                    <div class="activities-article-bottom">
+                        <a href="#">
+                            <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="img-activities"/>
+                        </a>
+                        <h3>Parc Longchamp</h3>
+                    </div>
+                </div>
             </div>            
 
         </section>
