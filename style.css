@@ -84,7 +84,7 @@ h1
 .search
 {
     display: flex;
-    width: 30%;
+    width: 50%;
 }
 
 /* Alignement, dimensions et couleur de l'icone de la barre de recherche */
@@ -95,7 +95,7 @@ h1
     align-items: center;
     justify-content: center;
     background-color: #f2f2f2;
-    width: 10%;
+    width: 8%;
     height: 50px;
     border-radius: 20px 0 0 20px;
 }
@@ -263,7 +263,6 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 /* Alignements des "articles" entre eux, envoi à la ligne, dimensions, couleur de fond, marges extérieures, bordures */
@@ -271,9 +270,9 @@ h1
 .accomodations-article 
 {
     flex-wrap: wrap; 
-    width: 30%;   
+    width: 29%;
     background-color: #ffffff;
-    margin: 15px;
+    margin: 10px;
     border: none;
     border-radius: 20px ; 
     padding: 5px;      
@@ -283,8 +282,10 @@ h1
 
 .img-accomodations
 {
+   
     width: 100%;
-    height:180px;
+    height: 180px;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -337,7 +338,7 @@ h1
 {
     background-color: #f2f2f2;
     width: 30%;
-    margin-left: 50px;
+    margin-left: 30px;
     border-radius: 30px;
 }
 
@@ -348,7 +349,7 @@ h1
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 20px 50px 0 20px;
+    margin: 20px 50px 10px 20px;
 }
 
 /* Dimensions de l'icône à coté du titre de la section "populaires" */
@@ -365,16 +366,17 @@ h1
     display: flex;   
     justify-content: flex-start; 
     background-color: #ffffff;
-    margin: 20px 40px 50px 30px;
+    margin: 0 20px 50px 20px;
     border-radius: 20px;
+    font-size: 0.8em;
 }
 
 /* Modification des dimensions des images, arrondis des bordures et marges extérieures */
 
 .img-popular
 {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 20px 0 0 20px;
     margin: 5px 5px 5px 5px ;
 }
@@ -383,21 +385,21 @@ h1
 
 .popular-article h3
 {
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
 }
 
 /* Marges intérieures pour placement des paragraphes des éléments */
 
 .popular-article p
 {
-    padding: 0 20px 60px 20px;
+    padding: 0 10px 30px 10px;
 }
 
 /* Marges intérieures pour placement des étoiles */
 
 .star
 {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
                                             /*SECTION ACTIVITÉS */
@@ -509,7 +511,7 @@ footer
 
 /* Media queries mobile */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 600px)
+@media only screen and (max-device-width: 480px) 
 {
     /* Enlévement de la marge appliquée en "desk" */
    
@@ -744,7 +746,7 @@ footer
 
     .popular-article 
     {
-        font-size: 0.7em;
+        font-size: 0.8em;
         margin: 10px;
     }
 
@@ -752,7 +754,7 @@ footer
 
     .img-popular
     {
-        width: 130px;
+        width: 40vw;
         height: 130px;       
     }
 
@@ -774,7 +776,7 @@ footer
 
     .star
     {
-        margin: 0 0 0 10px;
+        margin: 0 0 0 20px;
     }
 
     /* Mise en forme de "Afficher Plus " en bas de la section populaires */
@@ -806,6 +808,16 @@ footer
         box-shadow: 0 0 0 0.1em #f2f2f2;
         font-size: 0.7em;
         margin: 10px;
+    }
+
+    .accomodations-article h3
+    {
+        margin-left: 20px;
+    }
+
+    .accomodations-article p
+    {
+        margin-left: 20px;
     }
 
     /* Mise en forme des images */
@@ -907,5 +919,338 @@ footer
     {
         margin: 0;
         font-size: 0.8em;
+    }
+}
+
+                        /* MEDIA QUERIES écran entre 1024 et 1280px */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    header, main
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .filters li
+    {
+        margin-right: 10px;
+    }
+
+    .filters p
+    {
+        margin:5px;
+    }
+    
+    .accomodations-section
+    {
+        width: 60%;
+    }
+
+    .accomodations-article
+    {
+        width: 43%;
+    }
+
+    .popular
+    {
+        width: 40%;
+    }
+    
+    .activities
+    {
+        font-size: 0.7em;
+    }
+
+    .activities-article-top
+    {
+        margin-bottom: 30px;
+    }
+
+    .footer-field
+    {
+        margin-right: 100px;
+    }
+}
+
+/* MEDIA QUERIES pour écrans entre 768 px et 1024px */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+    body
+    {
+        margin:0;
+    }
+    
+    header, main
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #actions
+    {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .search
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filters
+    {
+        display: flex;
+        flex-flow: row wrap;
+        
+        font-size: 1.3em;
+    }
+
+    .filters ul
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:0 0 10px 50px;
+    }
+
+    .filters li
+    {
+        margin-top: 10px;
+    }
+
+    #information
+    {
+       font-size: 1.1em;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    .accomodations-popular
+    {
+        width: 100%;
+    }
+
+    .accomodations-section
+    {
+        width: 50%;
+    }
+
+    .accomodations
+    {
+        flex-flow: column wrap;
+    }
+
+    .accomodations-article
+    {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .popular
+    {
+        width: 50%;
+    }
+
+    #popular-title
+    {
+        font-size: 1em;
+        margin: 10px 20px 10px 0;
+    }
+    .popular-article
+    {
+        flex-flow: column wrap;
+        font-size: 1.2em;
+    }
+
+    .img-popular
+    {
+        width: 97%;
+        height: 300px;
+        border-radius:20px 20px 0 0;
+    }
+
+    .activities
+    {
+        flex-flow: row wrap;
+    }
+
+    .activities-article
+    {
+        width: 48%;
+        font-size: 1.2em;
+    }
+
+    .only
+    {
+        background-color: #f2f2f2;
+    }
+
+    .activities-article-top
+    {
+        background-color: #f2f2f2;
+    }
+
+    .activities-article-bottom
+    {
+        background-color: #f2f2f2;
+        margin-top:5px;
+    }
+
+    footer
+    {
+        flex-flow:  row wrap;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+
+    .footer-field
+    {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px)
+{
+    body
+    {
+        margin:0;
+    }
+    header, main
+    {
+        margin:20px;
+    }
+
+    h1
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #actions
+    {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .search
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filters
+    {
+        display: flex;
+        flex-flow: row wrap;
+        
+        font-size: 1.3em;
+    }
+
+    .filters ul
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 0 10px 10px;
+    }
+
+    .filters li
+    {
+        margin: 10px;
+    }
+
+    #information
+    {
+       font-size: 1.1em;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    .accomodations-popular
+    {
+        width: 100%;
+    }
+
+    .accomodations-section
+    {
+        width: 50%;
+    }
+
+    .accomodations
+    {
+        flex-flow: column wrap;
+    }
+
+    .accomodations-article
+    {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .popular
+    {
+        width: 50%;
+    }
+
+    #popular-title
+    {
+        font-size: 1em;
+        margin: 10px 20px 10px 0;
+    }
+    .popular-article
+    {
+        flex-flow: column wrap;
+        font-size: 1.2em;
+    }
+
+    .img-popular
+    {
+        width: 97%;
+        height: 300px;
+        border-radius:20px 20px 0 0;
+    }
+
+    .activities
+    {
+        flex-flow: row wrap;
+    }
+
+    .activities-article
+    {
+        width: 48%;
+        font-size: 1.2em;
+    }
+
+    .only
+    {
+        background-color: #f2f2f2;
+    }
+
+    .activities-article-top
+    {
+        background-color: #f2f2f2;
+    }
+
+    .activities-article-bottom
+    {
+        background-color: #f2f2f2;
+        margin-top:5px;
+    }
+
+    footer
+    {
+        flex-flow:  row wrap;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+
+    .footer-field
+    {
+        margin: 0 10px 0 10px;
     }
 }
