@@ -509,7 +509,7 @@ footer
 
                                             /* MEDIA QUERIES */
 
-/* Media queries mobile */
+                                                    /* Media queries mobile */
 
 @media only screen and (max-device-width: 480px) 
 {
@@ -665,6 +665,7 @@ footer
 
     .filters ul
     {
+        width: 100%;
         flex-wrap: wrap;
         margin: 0;
     }
@@ -681,7 +682,7 @@ footer
     .filters li
     {
        margin: 10px 10px 0 0px;
-       font-size: 0.8em;
+       font-size: 0.7em;
     }
 
     /* Mise en forme des icones des "filtres" */
@@ -922,199 +923,7 @@ footer
     }
 }
 
-                        /* MEDIA QUERIES écran entre 1024 et 1280px */
-
-@media screen and (min-width: 1024px) and (max-width: 1280px)
-{
-    header, main
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .filters li
-    {
-        margin-right: 10px;
-    }
-
-    .filters p
-    {
-        margin:5px;
-    }
-    
-    .accomodations-section
-    {
-        width: 60%;
-    }
-
-    .accomodations-article
-    {
-        width: 43%;
-    }
-
-    .popular
-    {
-        width: 40%;
-    }
-    
-    .activities
-    {
-        font-size: 0.7em;
-    }
-
-    .activities-article-top
-    {
-        margin-bottom: 30px;
-    }
-
-    .footer-field
-    {
-        margin-right: 100px;
-    }
-}
-
-/* MEDIA QUERIES pour écrans entre 768 px et 1024px */
-
-@media only screen and (min-width: 768px) and (max-width: 1024px)
-{
-    body
-    {
-        margin:0;
-    }
-    
-    header, main
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    h1
-    {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    #actions
-    {
-        font-size: 1.2em;
-        text-align: center;
-    }
-    .search
-    {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .filters
-    {
-        display: flex;
-        flex-flow: row wrap;
-        
-        font-size: 1.3em;
-    }
-
-    .filters ul
-    {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin:0 0 10px 50px;
-    }
-
-    .filters li
-    {
-        margin-top: 10px;
-    }
-
-    #information
-    {
-       font-size: 1.1em;
-      justify-content: center;
-      margin: 10px;
-    }
-
-    .accomodations-popular
-    {
-        width: 100%;
-    }
-
-    .accomodations-section
-    {
-        width: 50%;
-    }
-
-    .accomodations
-    {
-        flex-flow: column wrap;
-    }
-
-    .accomodations-article
-    {
-        width: 90%;
-        font-size: 1.2em;
-    }
-
-    .popular
-    {
-        width: 50%;
-    }
-
-    #popular-title
-    {
-        font-size: 1em;
-        margin: 10px 20px 10px 0;
-    }
-    .popular-article
-    {
-        flex-flow: column wrap;
-        font-size: 1.2em;
-    }
-
-    .img-popular
-    {
-        width: 97%;
-        height: 300px;
-        border-radius:20px 20px 0 0;
-    }
-
-    .activities
-    {
-        flex-flow: row wrap;
-    }
-
-    .activities-article
-    {
-        width: 48%;
-        font-size: 1.2em;
-    }
-
-    .only
-    {
-        background-color: #f2f2f2;
-    }
-
-    .activities-article-top
-    {
-        background-color: #f2f2f2;
-    }
-
-    .activities-article-bottom
-    {
-        background-color: #f2f2f2;
-        margin-top:5px;
-    }
-
-    footer
-    {
-        flex-flow:  row wrap;
-        justify-content: space-around;
-        font-size: 1.2em;
-    }
-
-    .footer-field
-    {
-        margin: 0 10px 0 10px;
-    }
-}
+                                /* MEDIA QUERIES pour écrans entre 480px et 768px */
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 768px)
 {
@@ -1252,5 +1061,201 @@ footer
     .footer-field
     {
         margin: 0 10px 0 10px;
+    }
+}
+
+
+
+                            /* MEDIA QUERIES pour écrans entre 768 px et 1024px */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+    body
+    {
+        margin:0;
+    }
+    
+    header, main
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #actions
+    {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .search
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filters
+    {
+        display: flex;
+        flex-flow: row wrap;
+        
+        font-size: 1.3em;
+    }
+
+    .filters ul
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:0 0 10px 50px;
+    }
+
+    .filters li
+    {
+        margin-top: 10px;
+    }
+
+    #information
+    {
+        font-size: 1.1em;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .accomodations-popular
+    {
+        width: 100%;
+    }
+
+    .accomodations-section
+    {
+        width: 50%;
+    }
+
+    .accomodations
+    {
+        flex-flow: column wrap;
+    }
+
+    .accomodations-article
+    {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .popular
+    {
+        width: 50%;
+    }
+
+    #popular-title
+    {
+        font-size: 1em;
+        margin: 10px 20px 10px 0;
+    }
+    .popular-article
+    {
+        flex-flow: column wrap;
+        font-size: 1.2em;
+    }
+
+    .img-popular
+    {
+        width: 97%;
+        height: 300px;
+        border-radius:20px 20px 0 0;
+    }
+
+    .activities
+    {
+        flex-flow: row wrap;
+    }
+
+    .activities-article
+    {
+        width: 48%;
+        font-size: 1.2em;
+    }
+
+    .only
+    {
+        background-color: #f2f2f2;
+    }
+
+    .activities-article-top
+    {
+        background-color: #f2f2f2;
+    }
+
+    .activities-article-bottom
+    {
+        background-color: #f2f2f2;
+        margin-top:5px;
+    }
+
+    footer
+    {
+        flex-flow:  row wrap;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+
+    .footer-field
+    {
+        margin: 0 10px 0 10px;
+    }
+}
+
+                                      /* MEDIA QUERIES écran entre 1024 et 1280px */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    header, main
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .filters li
+    {
+        margin-right: 10px;
+    }
+
+    .filters p
+    {
+        margin:5px;
+    }
+    
+    .accomodations-section
+    {
+        width: 60%;
+    }
+
+    .accomodations-article
+    {
+        width: 43%;
+    }
+
+    .popular
+    {
+        width: 40%;
+    }
+    
+    .activities
+    {
+        font-size: 0.7em;
+    }
+
+    .activities-article-top
+    {
+        margin-bottom: 30px;
+    }
+
+    .footer-field
+    {
+        margin-right: 100px;
     }
 }
