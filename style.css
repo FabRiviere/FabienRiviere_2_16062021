@@ -1137,12 +1137,12 @@ footer
 
     .accomodations
     {
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
 
     .accomodations-article
     {
-        width: 90%;
+        width: 100%;
         font-size: 1.2em;
     }
 
