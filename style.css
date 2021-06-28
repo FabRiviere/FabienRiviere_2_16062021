@@ -3,13 +3,15 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 /* Marges extérieures sur tous les titres en h2 */
 
 h2
 {
-    margin: 20px 0 0 20px;
+    margin: 30px 0 20px 20px;
+    font-size: 1.4em;
 }
 
 /* Marge à droite et gauche sur l'ensemble de la page */
@@ -28,44 +30,111 @@ margin: 0 50px 0 50px;
     display: none;
 }
 
+#logo
+{
+    padding-top: 30px;
+}
 /* Alignements des éléments de nav et le logo */
 
 nav
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2em;
 }
 
-/* Alignements des élements de nav entre eux et suppression des puces */
-
-nav ul
+nav a
 {
-    display: flex;
-    list-style: none;
+	text-decoration:none;
 }
 
-/* Espacements des éléments et attribution de la couleur */
-
-nav li 
+.link
 {
-    margin: 0 20px ;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	width: 35%;
+}
+
+.overline-accomodations, .overline-activities
+{
+	height: 3px;
+	background-color: #f2f2f2;
+	margin:0 0 40px 0;
+	width: 100%;
+	color: #ffffff;
+}
+
+#link-accomodations
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;	
+}
+
+#link-accomodations > .overline-accomodations
+{
+	background-color: #0065fc;
+}
+
+#link-accomodations:focus > .overline-accomodations
+{
+	background-color:#0065fc;
+}
+
+#accomodations:focus, #accomodations:visited
+{
+	color: #0065fc;
+}
+
+#accomodations:hover
+{
+    font-weight: 600;
+}
+
+#link-activities
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;
+}	
+
+#link-activities:hover > .overline-activities
+{
+	background-color: #0065fc;
+}
+
+#link-activities:visited > .overline-activities
+{
+	background-color: #0065fc;
+}
+
+#activities
+{
+	color: #000000;
+}
+
+#activities:hover
+{
+	color: #0065fc;
+    font-weight: 600;
+}
+
+#sign-up 
+{
+	margin: 40px 10px 0 10px;
+    width: 33%;
+    text-align: center;
+}
+
+#sign-up a
+{
     color: #0065fc;
+    font-weight: 900;
 }
 
-/* Enlévements des soulignements des liens/ancres */
-
-nav li a 
-{
-    text-decoration: none;
-}
-
-/* Attribution de la couleur grise au 2éme élement */
-
-nav li #activities
-{
-    color: #868282;
-}
 
 
                                     /*MAIN */
@@ -74,7 +143,15 @@ nav li #activities
 
 h1
 {
-    font-size: 1.7em;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+#actions
+{
+    font-size: 1.1em;
+    margin:0 0 20px 0;
 }
 
                                     /* BARRE DE RECHERCHE */
@@ -84,7 +161,7 @@ h1
 .search
 {
     display: flex;
-    width: 50%;
+   
 }
 
 /* Alignement, dimensions et couleur de l'icone de la barre de recherche */
@@ -95,8 +172,7 @@ h1
     align-items: center;
     justify-content: center;
     background-color: #f2f2f2;
-    width: 8%;
-    height: 50px;
+    padding: 20px;
     border-radius: 20px 0 0 20px;
 }
 
@@ -104,10 +180,11 @@ h1
 #search-text 
 {
     color: black;
-    font-weight: bold;
-    font-size: 1.3em;
+    font-weight: 600;
+    font-size: 1.1em;
     border: 2px solid #f2f2f2;
-    padding-left: 20px;
+    padding:0 0 0 25px;
+    
 }
 
 /* Mise en forme du bouton de recherche */
@@ -118,8 +195,9 @@ h1
     background-color: #0065fc;
     border: none;
     border-radius: 0 20px 20px 0;
-    width: 30%;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    padding: 0 30px 0 30px;
+    cursor: pointer;
 }
 
                                     /* FILTRES */
@@ -136,7 +214,7 @@ h1
 .filters 
 { 
     margin-top: 20px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -144,7 +222,7 @@ h1
 
 .filters p
 {
-    margin: 0 20px 0 20px;     
+    margin: 0 30px 0 20px;   
 }
 
 /*Alignement du titre "Filtres" */
@@ -170,9 +248,10 @@ h1
     display: flex;
     align-items: center;      
     list-style-type: none;
-    margin-right: 50px;  
+    margin-right: 60px;  
     border: 2px solid #f2f2f2;
-    border-radius: 50px;   
+    border-radius: 50px; 
+      
 }
 
 /* On change l'apparence des éléments au passage de la souris dessus */
@@ -180,7 +259,7 @@ h1
 .filters li:hover
 {
     background-color: #0065fc;
-    color: red;
+    color: #ffffff;
 }
 
 /* Icones des filtres */
@@ -192,17 +271,16 @@ h1
     justify-content: center;
     color:#0065fc;
     background-color: #deebff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;       
+    padding: 18px;
+    border-radius: 50px;      
 }
 
 /* on change également l'apparence des icones au survol de la souris */
 
 .ico-filters:hover
 {
-    background-color: #deebff;
-    color: red;
+    background-color: #ffffff;
+    color: #0065fc;
 }
 
 /* Paragraphe et icone d'information sous les filtres */
@@ -211,7 +289,9 @@ h1
 {
     display: flex;
     align-items: center;
-    margin: 30px 0 30px 0;   
+    margin: 20px 0 20px 0; 
+    color: #4b4949;
+    font-size: 1.2em; 
 }
 
 /* icone d'information */
@@ -223,17 +303,9 @@ h1
     justify-content: center;
     color: #0065fc;
     border: 2px solid #f2f2f2;
-    border-radius: 50px;
-    width: 30px;
-    height: 30px;
+    border-radius: 500px;
+    padding: 8px 14px;
     margin-right: 20px;       
-}
-
-/* Texte suivant l'icone "information" */ 
-
-#information p
-{
-    font-size: 1.2em;    
 }
 
                             /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
@@ -243,6 +315,7 @@ h1
 .accomodations-popular /* SUPPRESSION DU FLEX-START */
 {
     display: flex;
+    margin-bottom: 50px;
 }
 
                                 /* SECTION HÉBERGEMENTS */
@@ -253,7 +326,7 @@ h1
 {
     width: 70%;
     background-color: #f2f2f2;
-    padding: 10px 0 5px 10px;
+    padding: 10px 0 0 10px;
     border-radius: 30px;
 }
 
@@ -263,6 +336,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 20px 0 20px;
 }
 
 /* Alignements des "articles" entre eux, envoi à la ligne, dimensions, couleur de fond, marges extérieures, bordures */
@@ -270,9 +344,9 @@ h1
 .accomodations-article 
 {
     flex-wrap: wrap; 
-    width: 29%;
+    width: 28%;
     background-color: #ffffff;
-    margin: 10px;
+    margin: 15px;
     border: none;
     border-radius: 20px ; 
     padding: 5px;      
@@ -284,16 +358,20 @@ h1
 {
    
     width: 100%;
-    height: 180px;
+    height: 160px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+}
+.accomodations a
+{
+    color: black;
+    text-decoration: none;
 }
 
 /* Mise en gras des titres des articles h3, et applications des marges extérieures */
 
 .accomodations-article h3
 {
-    font-weight: bold;
     margin: 10px 0 10px 10px;
 }
 
@@ -323,9 +401,15 @@ h1
 
 #more
 {
+    margin: 30px 0 0 50px;
+}
+
+#more a
+{
+    color: black;
+    text-decoration: none;
     font-size: 1.3em;
-    font-weight: bold;
-    margin-left: 20px;
+    font-weight: 600;
 }
 
                                     /*SECTION POPULAIRES */
@@ -340,6 +424,7 @@ h1
     width: 30%;
     margin-left: 30px;
     border-radius: 30px;
+    padding: 0 20px 0 20px;
 }
 
 /* Titre de la section populaire (incluant titre et icone ). Alignement des 2 éléments entre eux et marge extérieure */
@@ -349,7 +434,7 @@ h1
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 20px 50px 10px 20px;
+    margin: 10px 20px 20px 20px;
 }
 
 /* Dimensions de l'icône à coté du titre de la section "populaires" */
@@ -366,9 +451,10 @@ h1
     display: flex;   
     justify-content: flex-start; 
     background-color: #ffffff;
-    margin: 0 20px 50px 20px;
+    margin-bottom: 30px;
+    padding: 5px;
     border-radius: 20px;
-    font-size: 0.8em;
+    width: 95%;
 }
 
 /* Modification des dimensions des images, arrondis des bordures et marges extérieures */
@@ -376,11 +462,16 @@ h1
 .img-popular
 {
     width: 180px;
-    height: 180px;
+    height: 200px;
     border-radius: 20px 0 0 20px;
-    margin: 5px 5px 5px 5px ;
+    object-fit: cover;
 }
 
+.popular a
+{
+    color: black;
+    text-decoration: none;
+}
 /* Marges intérieures sur les titres h3 des éléments */
 
 .popular-article h3
@@ -392,7 +483,7 @@ h1
 
 .popular-article p
 {
-    padding: 0 10px 30px 10px;
+    padding: 0 10px 60px 10px;
 }
 
 /* Marges intérieures pour placement des étoiles */
@@ -412,6 +503,8 @@ h1
 {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
 }
 
 /* Alignement des éléments, largeur, couleur de fond, marge et arrondis des bordures */
@@ -421,30 +514,40 @@ h1
     background-color: #ffffff;
     margin: 20px 0 20px 0;   
     border-radius: 20px ; 
-    width: 24%;
+    width: 22%;  
 }
+
+
 
 /* Alignement du titre */
 
-.activities-article h3
+.activities-article h3, .activities-article-only h3
 {  
    margin-left: 20px;
+}
+
+.activities a
+{
+    color: black;
+    text-decoration: none;
 }
 
 /* Bordures et arrondis des articles seuls (grandes images) */
 
 .only
 {
-    border: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
     border-radius: 20px; 
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
 }
-
 /* Bordures, arrondis des articles situés en haut (avec 2 articles/ colonne) */
 
-.activities-article-top
+.activities-article-top 
 {
     border-bottom: 1px solid #f2f2f2;
-    border-radius: 20px;   
+    border-radius: 20px; 
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
+    
 }
 
 /* Bordures, arrondis et marges des articles situés en bas  (avec 2 articles/ colonne) */
@@ -453,27 +556,98 @@ h1
 {
     border: 1px solid #f2f2f2;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    
 }
+.activities-article-top
+{
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 20px; 
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
+    
+}
+
+.activities-article-bottom
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    
+}
+
+.activities-article-top-right
+{
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 20px; 
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
+    
+}
+
+.activities-article-bottom-right
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    
+}
+
 
 /* Taille des images plus petites */
 
 .img-activities
 {
     width: 100%; 
-    height: 200px; 
+    height: 160px; 
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.activities-article-top img
+{
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.activities-article-bottom img
+{
+    height: 125px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.activities-article-top-right img
+{
+    height: 140px;
+    object-fit: cover;
+    object-position: top; 
+}
+
+.activities-article-bottom-right img
+{
+    height: 170px;
+    object-fit: cover;
+    object-position: top;
+    
 }
 
 /* Taille des images plus grandes */
 
 .img-activities-height
 {
-    width: auto; 
-    height: 480px;
-    max-width: 100%;
+    width: 100%;
+    height: 420px;
     border-radius: 20px 20px 0  0; 
+    object-fit: cover;
+    object-position: top;
 }
+
+
 
                                             /*FOOTER*/
 
@@ -484,28 +658,37 @@ footer
     display: flex;
     background-color: #f2f2f2;
 }
-
 /* Marges extérieures appliquées à chaque élements */
 
 .footer-field
-{
-    margin: 20px 280px 20px 10px;
+{   
+    flex-flow: column nowrap;
+    margin: 20px 350px 40px 50px;
+    font-size: 1.2em;
 }
 
 /* Enlevement des puces de la liste et gestion des interlignes */
 
-.footer-field li
+.footer-field a
 {
+    display: flex;
+    flex-flow: column nowrap;
     list-style: none;
     line-height: 2em;
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    font-weight: 500;
+}
+
+.footer-field h4 
+{
+    font-size: 1.2em;
+    margin-bottom: 0;  
 }
 
 /* Marge extérieure gauche des titres pour aligner avec les éléments de liste */ 
 
-.footer-field h4
-{
-    margin-left: 40px;
-}
+
 
                                             /* MEDIA QUERIES */
 
@@ -910,7 +1093,7 @@ footer
     footer
     {
         display: flex;
-        align-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
     }
 
