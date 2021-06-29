@@ -326,7 +326,7 @@ h1
 {
     width: 70%;
     background-color: #f2f2f2;
-    padding: 10px 0 0 10px;
+    padding: 0;
     border-radius: 30px;
 }
 
@@ -336,7 +336,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px 0 20px;
+    padding: 0;
 }
 
 /* Alignements des "articles" entre eux, envoi à la ligne, dimensions, couleur de fond, marges extérieures, bordures */
@@ -344,9 +344,9 @@ h1
 .accomodations-article 
 {
     flex-wrap: wrap; 
-    width: 28%;
+    width: 29%;
     background-color: #ffffff;
-    margin: 15px;
+    margin: 20px 12px;
     border: none;
     border-radius: 20px ; 
     padding: 5px;      
@@ -740,30 +740,41 @@ footer
     #second-line 
     {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    #accomodations-link
+    {
+        padding: 0 50px 0 50px;
+        color: #0065fc;
+    }
+
+    #activities-link
+    {
+        padding: 0 50px 0 50px;
+        color: #585656;
     }
 
     /* mise en forme du texte"activités" */
 
-     #activities
+     .overline-accomodations-mob, .overline-activities-mob
+     {
+         height: 2px;
+         background-color: #f2f2f2;
+         margin-top: 10px;
+     }
+
+    .overline-accomodations-mob 
     {
-        color: #7c7a7a;
+        background-color: #0065fc; 
     }
 
-    /* mise en forme de la balise <hr> (trait sous hébergements et activités) */
-    
-    hr
-    {
-        border-left: 50vmin solid #0065fc;
-        border-right: 50vmin solid #f2f2f2;
-        height: 3px;       
-    }
-
+      
     /* Marge sur la section "recherche et filtres" */
 
     .search-filters
     {
-        margin: 0 10px 0 10px;
+        margin: 0 15px 0 15px;
     }
 
     /* Mise en forme du titre h1 */
@@ -787,20 +798,19 @@ footer
 
     .search
     {
-        width: 100%;
         border-top:1px solid #f2f2f2;
         border-bottom: 1px solid #f2f2f2;
         border-radius: 20px;
         margin-top: 10px;
+       
     }
 
     /* Mise en forme de l'icone de recherche */
 
     #search-ico
     {
-      width: 15%;
-      height: 40px;
-      border-radius: 10px 0 0 10px;
+      border-radius: 15px 0 0 15px;
+      padding: 10px 18px;
     }
 
     /* Non-affichage du bouton de recherche "desk" */
@@ -820,14 +830,13 @@ footer
         color:#f2f2f2;
         background-color: #0065fc;
         border-radius: 10px;
-        width: 15%;
+        padding: 15px;
     }
 
     /* Mise en forme du champs texte de recherche */
 
     #search-text
     { 
-       width: 70%;
        border: none;
        font-size: 1em;
     }
@@ -844,11 +853,14 @@ footer
        font-size: 1em;
     }
     
+    .ico-filters
+    {
+        font-size: 1.2em;
+    }
     /*  Mise en forme de la liste */
 
     .filters ul
     {
-        width: 100%;
         flex-wrap: wrap;
         margin: 0;
     }
@@ -857,24 +869,25 @@ footer
 
     #filters-title
     {
-        margin: 0 300px 0 0px;       
+        margin: 0 100% 0 0;       
     }
 
     /* Mise en forme du texte */
 
     .filters li
     {
-       margin: 10px 10px 0 0px;
-       font-size: 0.7em;
+       margin: 10px 15px 0 0px;
+       font-size: .8em;
+    }
+
+    .filters li p
+    {
+        margin: 0 15px 0 15px;
     }
 
     /* Mise en forme des icones des "filtres" */
 
-    .ico-filters
-    {
-        width: 40px;
-        height: 40px;
-    }
+    
 
     
                                     /* Information */
@@ -884,16 +897,15 @@ footer
     #information 
     {
         align-items: baseline;
-        font-size: 0.7em;
-        font-weight: bold;
-        margin: 0;
+        font-size: 0.9em;
+        font-weight: 400;
+        margin: 10px 0 10px 10px;
     }
     /* mise en forme de l'icone */
 
     #information i
     {
-        width: 20px;
-        height: 20px;
+        padding: 8px 12px;
     }
 
                             /* Sections populaires et hébergements */
@@ -922,7 +934,7 @@ footer
 
     #popular-title
     {
-        font-size: 0.8em;
+        font-size: 1em;
         margin: 0 20px 20px 0;
     }
 
@@ -931,7 +943,7 @@ footer
     .popular-article 
     {
         font-size: 0.8em;
-        margin: 10px;
+        margin: 10px 0 10px 0;
     }
 
     /* Mise en forme des images "populaires" */
@@ -939,14 +951,14 @@ footer
     .img-popular
     {
         width: 40vw;
-        height: 130px;       
+        height: 140px;       
     }
 
     /* Mise en forme du titre des articles populaires */
 
     .popular-article h3
     {
-        margin: 0 0 0 10px;
+        margin: 0 0 10px 10px;
     }
 
     /* Mise en forme des paragraphes */
@@ -963,13 +975,7 @@ footer
         margin: 0 0 0 20px;
     }
 
-    /* Mise en forme de "Afficher Plus " en bas de la section populaires */
-
-    #more
-    {
-        margin: 10px 0 10px 10px;
-        font-size: .7em;
-    }
+    
 
                                    /* Section Hebergements */
 
@@ -984,6 +990,10 @@ footer
         background-color: #ffffff;
     }
 
+    .accomodations
+    {
+        padding: 0;
+    }
     /* Mise en forme des articles */
 
     .accomodations-article
@@ -1008,17 +1018,24 @@ footer
 
     .img-accomodations
     {
-        height: 120px;
+        height: 110px;
     }
 
     /* Mise en forme du titre de la section */
 
     #hebergements
     {
-        font-size: 1em;
-        margin: 0 0 10px 10px;
+        font-size: 1.1em;
+        margin: 0 0 10px 20px;
     }
 
+    /* Mise en forme de "Afficher Plus " en bas de la section hébergements */
+
+    #more
+    {
+        margin: 20px 0 10px 20px;
+        font-size: .9em;
+    }
 
                                       /* Section Activités */
 
@@ -1095,13 +1112,14 @@ footer
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        padding-left: 20px;
     }
 
     /* Mise en forme des éléments du footer */
 
     .footer-field
     {
-        margin: 0;
+        margin: 10px;
         font-size: 0.8em;
     }
 }
@@ -1116,9 +1134,75 @@ footer
     }
     header, main
     {
-        margin:20px;
+        padding: 10px;
+        margin: 0;
     }
 
+    nav
+    {
+        display: none;
+    }
+    .mobile
+    {
+    display: contents;
+    }
+    .mobile
+    {
+        display: contents;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    /* mise en forme logo et lien "s'inscrire"*/
+
+    #first-line
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;      
+    }
+    /* Enlèvement des soulignements des liens*/
+
+    .mobile a
+    {
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    /* mise en forme des éléments "hébergements et "activités"*/
+
+    #second-line 
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #accomodations-link
+    {
+        padding: 0 70px 0 70px;
+        color: #0065fc;
+    }
+
+    #activities-link
+    {
+        padding: 0 70px 0 70px;
+        color: #585656;
+    }
+
+    /* mise en forme du texte"activités" */
+
+     .overline-accomodations-mob, .overline-activities-mob
+     {
+         height: 2px;
+         background-color: #f2f2f2;
+         margin-top: 10px;
+     }
+
+    .overline-accomodations-mob 
+    {
+        background-color: #0065fc; 
+    }
     h1
     {
         font-size: 1.5em;
@@ -1130,9 +1214,10 @@ footer
         font-size: 1.2em;
         text-align: center;
     }
+
     .search
     {
-        width: 100%;
+        font-size: .9em;
         justify-content: center;
     }
 
@@ -1140,15 +1225,19 @@ footer
     {
         display: flex;
         flex-flow: row wrap;
-        
-        font-size: 1.3em;
+        font-size: .9em;
+    }
+
+    #filters-title
+    {
+        font-size: 1.2em;
+        margin: 0 100% 0 10px;
     }
 
     .filters ul
     {
-        justify-content: center;
         flex-wrap: wrap;
-        margin: 0 0 10px 10px;
+        margin: 0 10px 10px 0;
     }
 
     .filters li
@@ -1160,7 +1249,11 @@ footer
     {
        font-size: 1.1em;
       justify-content: center;
-      margin: 10px;
+      margin: 0 0 20px 10px;
+    }
+    #information p
+    {
+       margin: 0; 
     }
 
     .accomodations-popular
@@ -1176,17 +1269,21 @@ footer
     .accomodations
     {
         flex-flow: column wrap;
+        padding: 0;
     }
 
     .accomodations-article
     {
         width: 90%;
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 10px 0 0 0;
     }
 
     .popular
     {
         width: 50%;
+        margin-left: 15px;
+        padding: 0 10px 0 10px;
     }
 
     #popular-title
@@ -1197,14 +1294,21 @@ footer
     .popular-article
     {
         flex-flow: column wrap;
-        font-size: 1.2em;
+        font-size: 1em;
+        width: 95%;
+        margin: 10px 0 10px 0;
     }
 
     .img-popular
     {
-        width: 97%;
+        min-width: 100%;
         height: 300px;
         border-radius:20px 20px 0 0;
+    }
+
+    #more
+    {
+        margin-bottom: 10px;
     }
 
     .activities
@@ -1237,13 +1341,13 @@ footer
     footer
     {
         flex-flow:  row wrap;
-        justify-content: space-around;
-        font-size: 1.2em;
+        justify-content: center;
+        font-size: .9em;
     }
 
     .footer-field
     {
-        margin: 0 10px 0 10px;
+        margin: 0 20px 0 20px;
     }
 }
 
@@ -1262,6 +1366,11 @@ footer
     {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .link
+    {
+       width: 60%; 
     }
 
     h1
@@ -1284,9 +1393,8 @@ footer
     .filters
     {
         display: flex;
-        flex-flow: row wrap;
-        
-        font-size: 1.3em;
+        flex-flow: row wrap;   
+        font-size: 1.1em;
     }
 
     .filters ul
@@ -1401,6 +1509,11 @@ footer
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .link
+    {
+        width: 50%;
+    }
     
     .filters li
     {
@@ -1415,11 +1528,22 @@ footer
     .accomodations-section
     {
         width: 60%;
+        padding: 0;
     }
 
+    .accomodations
+    {
+        padding: 0;
+    }
     .accomodations-article
     {
-        width: 43%;
+        width: 44%;
+        margin: 10px;
+    }
+
+    #more
+    {
+        margin-bottom: 10px;
     }
 
     .popular
