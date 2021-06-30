@@ -1,4 +1,4 @@
-/* Je mets le police Raleway en lien avec l'url dans html*/
+/* Setting up the font "Raleway" in link with the url in html*/
 
 body
 {
@@ -6,7 +6,7 @@ body
     margin: 0;
 }
 
-/* Marges extérieures sur tous les titres en h2 */
+/* External margins and font size on all title in h2 */
 
 h2
 {
@@ -14,7 +14,7 @@ h2
     font-size: 1.4em;
 }
 
-/* Marge à droite et gauche sur l'ensemble de la page */
+/* Left and right margin on the entire page */
 
 header, main
 {
@@ -23,18 +23,20 @@ margin: 0 50px 0 50px;
 
                                     /*HEADER / NAV */
 
-/* Navigation mobile non affichée */
+/* Mobile navigation not displayed */
 
 .mobile
 {
     display: none;
 }
 
+/* Placement of the logo */
+
 #logo
 {
     padding-top: 30px;
 }
-/* Alignements des éléments de nav et le logo */
+/* Alignment of nav elements and logo */
 
 nav
 {
@@ -43,10 +45,14 @@ nav
 	font-size: 1.2em;
 }
 
+/* removal of underline text on navigation links */
+
 nav a
 {
 	text-decoration:none;
 }
+
+/* shaping of navigation bar */
 
 .link
 {
@@ -56,6 +62,8 @@ nav a
 	width: 40%;
 }
 
+/* shaping of the elements of navigation bar */
+
 #link-element
 {
 	display: flex;
@@ -63,6 +71,8 @@ nav a
 	align-items: center;
 	width: 33%;	  
 }
+
+/* Formatting of overline to the elements of navigation bar*/
 
 .overline-element
 {
@@ -108,6 +118,8 @@ nav a
     color: #0065fc;
 }
 
+/* Formatting element "S'incrire" */
+
 #sign-up 
 {
 	margin: 40px 10px 0 10px;
@@ -121,11 +133,9 @@ nav a
     font-weight: 900;
 }
 
-
-
                                     /*MAIN */
 
-/* Modification du titre h1 en changeant la taille du texte */ 
+/* Change title h1 by changing text size */ 
 
 h1
 {
@@ -134,23 +144,23 @@ h1
     margin: 20px 0 10px 0;
 }
 
+/* Change subtitle by changing text size and margin */
+
 #actions
 {
     font-size: 1.1em;
     margin:0 0 20px 0;
 }
 
-                                    /* BARRE DE RECHERCHE */
+                                    /* SEARCH BAR */
 
-/* Alignement et taille de la barre de recherche */
 
 .search
 {
-    display: inline-flex;
-   
+    display: inline-flex; 
 }
 
-/* Alignement, dimensions et couleur de l'icone de la barre de recherche */
+/* Search Bar Icon : Alignment, Dimensions and Color */
 
 #search-ico
 {
@@ -162,18 +172,17 @@ h1
     border-radius: 20px 0 0 20px;
 }
 
-/* Mise en forme du texte dan le formulaire de recherche */
+/* Formatting the text in the search form */
 #search-text 
 {
     color: black;
     font-weight: 600;
     font-size: 1.1em;
     border: 2px solid #f2f2f2;
-    padding:0 0 0 25px;
-    
+    padding:0 0 0 25px; 
 }
 
-/* Mise en forme du bouton de recherche */
+/* Formatting the search button */
 
 #search-button
 {
@@ -186,16 +195,18 @@ h1
     cursor: pointer;
 }
 
-                                    /* FILTRES */
-
-/* Icone de recherche mobile - non affichée en desk */
+/* Mobile search icon - not displayed on the desk */
 
 #search-glass
 {
     display: none;
 }
 
-/* Mise en forme des textes des éléments de filtres */
+                                    /* FILTERS */
+
+
+
+/* Formatting of filter element texts */
 
 .filters 
 { 
@@ -204,21 +215,21 @@ h1
     font-weight: bold;
 }
 
-/* textes des éléments de filtres à l'intérieur des champs */
+/* texts of filter elements inside the fields */
 
 .filters p
 {
     margin: 0 30px 0 20px;   
 }
 
-/*Alignement du titre "Filtres" */
+/*Alignment of the title "Filters" */
 
 #filters-title
 {
     margin-right: 50px;
 }
 
-/* Alignements de l'ensemble des éléments de liste des filtres */
+/* Alignments of all filter list items */
 
 .filters ul 
 {
@@ -227,7 +238,7 @@ h1
     padding: 0;  
 }
 
-/* Alignement et mise en forme des Eléments de liste des filtres */
+/* Alignment and Formatting of Filter List Elements */
 
 .filters li 
 {
@@ -236,11 +247,10 @@ h1
     list-style-type: none;
     margin-right: 60px;  
     border: 2px solid #f2f2f2;
-    border-radius: 50px; 
-      
+    border-radius: 50px;    
 }
 
-/* On change l'apparence des éléments au passage de la souris dessus */
+/* Change the appearance of the elements when the mouse passes over them */
 
 .filters li:hover
 {
@@ -248,7 +258,7 @@ h1
     color: #ffffff;
 }
 
-/* Icones des filtres */
+/* Filter Icons */
 
 .ico-filters
 {
@@ -261,7 +271,7 @@ h1
     border-radius: 50px;      
 }
 
-/* on change également l'apparence des icones au survol de la souris */
+/* you also change the appearance of the icons when hovering over the mouse */
 
 .ico-filters:hover
 {
@@ -269,7 +279,7 @@ h1
     color: #0065fc;
 }
 
-/* Paragraphe et icone d'information sous les filtres */
+/* Paragraph and information icon under the filters */
 
 #information
 {
@@ -280,7 +290,7 @@ h1
     font-size: 1.2em; 
 }
 
-/* icone d'information */
+/* information icon */
 
 #information i
 {
@@ -294,19 +304,19 @@ h1
     margin-right: 20px;       
 }
 
-                            /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
+                            /* ACCOMODATIONS AND POPULAR SECTIONS */
 
-/* Mise en forme des sections "hébergements" et "populaires" et alignements entre elles */
+/* Formatting of "accommodation" and "popular" sections and alignments between them */
 
-.accomodations-popular /* SUPPRESSION DU FLEX-START */
+.accomodations-popular 
 {
     display: flex;
     margin-bottom: 50px;
 }
 
-                                /* SECTION HÉBERGEMENTS */
+                                /* ACCOMODATIONS SECTION */
 
-/* Section "hébergements" à laquelle, on donne la couleur du fond, les dimensions, et les marges int. et arrondis */
+/* Section "accommodation" to which we give the background color, the dimensions, and the padding and rounded */
 
 .accomodations-section
 {
@@ -316,7 +326,7 @@ h1
     border-radius: 30px;
 }
 
-/* Alignements et dimensions du conteneurs des articles */
+/* Item container alignments and dimensions */
 
 .accomodations
 {
@@ -325,7 +335,7 @@ h1
     padding: 0;
 }
 
-/* Alignements des "articles" entre eux, envoi à la ligne, dimensions, couleur de fond, marges extérieures, bordures */
+/* Alignments of the "articles" between them, sending to the line, dimensions, background color, margins, borders */
 
 .accomodations-article 
 {
@@ -338,11 +348,10 @@ h1
     padding: 5px;      
 }
 
-/* Dimensionnement des images, arrondis des bordures */
+/* Sizing of images, rounding of borders */
 
 .img-accomodations
 {
-   
     width: 100%;
     height: 160px;
     object-fit: cover;
@@ -354,21 +363,20 @@ h1
     text-decoration: none;
 }
 
-/* Mise en gras des titres des articles h3, et applications des marges extérieures */
+/* Margin h3 and p of article*/
 
 .accomodations-article h3
 {
     margin: 10px 0 10px 10px;
 }
 
-/* Mise en page des paragraphes des articles pour les marges */
 
 .accomodations-article p
 {
    margin: 0 0 10px 10px;
 }
 
-/* Mise en page des icônes (étoiles) de votes avec marges et couleur en "bleues" */ 
+/* Formatting star */ 
 
 .star 
 {
@@ -376,14 +384,14 @@ h1
     color: #0065fc
 }
 
-/* Passage des étoiles en couleur grises */
+/* Stars in grey color */
 
 .star-grey
 {
     color: #c7c3c3c5;
 }
 
-/* Modification de "Afficher plus" en bas de la section hébergements */
+/* Modification of "Show more" at the bottom of the accommodation section */
 
 #more
 {
@@ -398,11 +406,11 @@ h1
     font-weight: 600;
 }
 
-                                    /*SECTION POPULAIRES */
+                                    /*POPULAR SECTION */
 
-/* Mise en forme de la section "Populaires" */
+/* Formatting popular section */
 
-/* section "populaires" à laquelle est appliquée : couleur de fond, des dimensions et marges extérieures */
+/* "Popular" section to which is applied: background color, dimensions and margins */
 
 .popular
 {
@@ -413,7 +421,7 @@ h1
     padding: 0 10px 0 25px;
 }
 
-/* Titre de la section populaire (incluant titre et icone ). Alignement des 2 éléments entre eux et marge extérieure */
+/* Popular section title (including title and icon ). Alignment of the 2 elements between them and margin */
 
 .popular-title
 {
@@ -424,14 +432,14 @@ h1
     font-size: 1.4em;
 }
 
-/* Dimensions de l'icône à coté du titre de la section "populaires" */
+/* Dimensions of the icon next to the title of the "popular" section */
 
 #popular-title-ico
 {
     font-size: 1.4em;
 }
 
-/* Alignements des éléments, couleur de fond, marges extérieures et arrondis des bordures */
+/* Element Alignments, Background Color, margin and Rounded border */
 
 .popular-article
 {
@@ -444,7 +452,7 @@ h1
     width: 90%;
 }
 
-/* Modification des dimensions des images, arrondis des bordures et marges extérieures */
+/* Changing image dimensions, rounding border */
 
 .img-popular
 {
@@ -459,32 +467,30 @@ h1
     color: black;
     text-decoration: none;
 }
-/* Marges intérieures sur les titres h3 des éléments */
+/* Padding of h3 and p of the element */
 
 .popular-article h3
 {
     padding: 0 10px 0 10px;
 }
 
-/* Marges intérieures pour placement des paragraphes des éléments */
-
 .popular-article p
 {
     padding: 0 10px 60px 10px;
 }
 
-/* Marges intérieures pour placement des étoiles */
+/* Margin to the star */
 
 .star
 {
     margin-left: 10px;
 }
 
-                                            /*SECTION ACTIVITÉS */
+                                            /*ACTIVITIES SECTION */
 
-/* Mise en page de la section "Activités" */
+/* Formatting of activities section */
 
-/* Alignement de la section "Activités" */
+/* Alignment of the "Activities" section */
 
 .activities
 {
@@ -494,7 +500,7 @@ h1
     margin-bottom: 50px;
 }
 
-/* Alignement des éléments, largeur, couleur de fond, marge et arrondis des bordures */
+/* Alignment of elements, width, background color, margin and rounded border */
 
 .activities-article
 {
@@ -506,7 +512,7 @@ h1
 
 
 
-/* Alignement du titre */
+/* Alignment title of the element */
 
 .activities-article h3, .activities-article-only h3
 {  
@@ -519,7 +525,7 @@ h1
     text-decoration: none;
 }
 
-/* Bordures et arrondis des articles seuls (grandes images) */
+/* Borders and rounding of articles only (large images) */
 
 .only
 {
@@ -527,32 +533,29 @@ h1
     border-radius: 20px; 
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
 }
-/* Bordures, arrondis des articles situés en haut (avec 2 articles/ colonne) */
+/* Borders, rounded to items at the top (with 2 items/column) */
 
 .activities-article-top 
 {
     border-bottom: 1px solid #f2f2f2;
     border-radius: 20px; 
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
-    
 }
 
-/* Bordures, arrondis et marges des articles situés en bas  (avec 2 articles/ colonne) */
+/* Borders, rounding and margins of bottom items (with 2 items/column) */
 
 .activities-article-bottom
 {
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     margin-top: 40px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
 }
 .activities-article-top
 {
     border-bottom: 1px solid #f2f2f2;
     border-radius: 20px; 
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
-    
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);  
 }
 
 .activities-article-bottom
@@ -560,16 +563,14 @@ h1
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     margin-top: 40px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);  
 }
 
 .activities-article-top-right
 {
     border-bottom: 1px solid #f2f2f2;
     border-radius: 20px; 
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
-    
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);    
 }
 
 .activities-article-bottom-right
@@ -577,12 +578,10 @@ h1
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     margin-top: 40px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);   
 }
 
-
-/* Taille des images plus petites */
+/* Size of smaller images */
 
 .img-activities
 {
@@ -597,8 +596,7 @@ h1
 {
     height: 190px;
     object-fit: cover;
-    object-position: center;
-    
+    object-position: center;   
 }
 
 .activities-article-bottom img
@@ -620,10 +618,9 @@ h1
     height: 170px;
     object-fit: cover;
     object-position: center;
-    
 }
 
-/* Taille des images plus grandes */
+/* Size of larger images */
 
 .img-activities-height
 {
@@ -634,18 +631,15 @@ h1
     object-position: center;
 }
 
-
-
                                             /*FOOTER*/
 
-/* Alignements des éléments présents dans le footer, et on donne une couleur de fond */
+/* Alignments of the elements present in the footer, and we give a background color */
 
 footer
 {
     display: flex;
     background-color: #f2f2f2;
 }
-/* Marges extérieures appliquées à chaque élements */
 
 .footer-field
 {   
@@ -654,7 +648,7 @@ footer
     font-size: 1.2em;
 }
 
-/* Enlevement des puces de la liste et gestion des interlignes */
+/* Alignements, removing bullets from the list and managing line spacing */
 
 .footer-field a
 {
@@ -681,31 +675,27 @@ footer
     list-style: none;
 }
 
-/* Marge extérieure gauche des titres pour aligner avec les éléments de liste */ 
-
-
-
                                             /* MEDIA QUERIES */
 
                                                     /* Media queries mobile */
 
 @media only screen and (max-device-width: 480px) 
 {
-    /* Enlévement de la marge appliquée en "desk" */
+    /* Removal of the margin applied in "desk" */
    
     body, header, main
     {
         margin: 0;
     }
     
-    /* Je n'affiche pas la nav "desk" */
+    /* not display the nav "desk" */
 
     nav
     {
         display: none;
     }
 
-    /* J'affiche la nav "mobile" */
+    /*  display the nav "mobile" */
 
     .mobile
     {
@@ -719,7 +709,7 @@ footer
         color: #0065fc;
     }
 
-    /* mise en forme logo et lien "s'inscrire"*/
+    /* formatting logo and "register" link*/
 
     #first-line
     {
@@ -728,14 +718,14 @@ footer
         align-items: center;
         margin: 10px;      
     }
-    /* Enlèvement des soulignements des liens*/
+    /* Removal of link underline */
 
     .mobile a
     {
         text-decoration: none;
     }
 
-    /* mise en forme des éléments "hébergements et "activités"*/
+    /* formatting of the elements "accommodation and "activities"*/
 
     #second-line 
     {
@@ -756,13 +746,13 @@ footer
         color: #585656;
     }
 
-    /* mise en forme du texte"activités" */
+    /* formatting underline link */
 
      .overline-accomodations-mob, .overline-activities-mob
      {
-         height: 2px;
-         background-color: #f2f2f2;
-         margin-top: 10px;
+        height: 2px;
+        background-color: #f2f2f2;
+        margin-top: 10px;
      }
 
     .overline-accomodations-mob 
@@ -771,14 +761,14 @@ footer
     }
 
       
-    /* Marge sur la section "recherche et filtres" */
+    /* Margin on the "search and filters" section */
 
     .search-filters
     {
         margin: 0 15px 0 15px;
     }
 
-    /* Mise en forme du titre h1 */
+    /* Formatting of title h1 */
 
     h1
     {
@@ -786,7 +776,7 @@ footer
         text-align: center;
     }
 
-    /* mise en forme du texte sous le titre */
+    /* Formatting subtitle */
 
     #actions
     {
@@ -795,7 +785,7 @@ footer
         text-align: center;
     }
 
-    /* Mise en forme barre de recherche */ 
+    /* Formatting search bar */ 
 
     .search
     {
@@ -805,7 +795,7 @@ footer
         margin-top: 10px;
     }
 
-    /* Mise en forme de l'icone de recherche */
+    /* Formatting the search icon */
 
     #search-ico
     {
@@ -813,14 +803,14 @@ footer
       padding: 10px 18px;
     }
 
-    /* Non-affichage du bouton de recherche "desk" */
+    /* Not displaying the "desk" search button */
 
     #search-button
     {
         display:none;
     }
 
-    /* Mise en forme du bouton "loupe" qui remplace le bouton "Recherche" */
+    /* Formatting of the "magnifying glass" button which replaces the "Search" button */
 
     #search-glass
     {
@@ -833,7 +823,7 @@ footer
         padding: 15px;
     }
 
-    /* Mise en forme du champs texte de recherche */
+    /* Formatting the Search Text Field */
 
     #search-text
     { 
@@ -843,7 +833,7 @@ footer
 
                                          /* FILTERS*/
 
-    /* Alignement des éléments de filtres */
+    /* Alignment of filter elements */
 
     .filters  
     {
@@ -857,7 +847,7 @@ footer
     {
         font-size: 1.2em;
     }
-    /*  Mise en forme de la liste */
+    /*  Formatting the list */
 
     .filters ul
     {
@@ -865,14 +855,14 @@ footer
         margin: 0;
     }
 
-    /* Mise en forme du titre */
+    /* Formatting title */
 
     #filters-title
     {
         margin: 0 60% 0 0;       
     }
 
-    /* Mise en forme du texte */
+    /* Formatting text */
 
     .filters li
     {
@@ -884,15 +874,10 @@ footer
     {
         margin: 0 15px 0 15px;
     }
-
-    /* Mise en forme des icones des "filtres" */
-
-    
-
-    
+  
                                     /* Information */
 
-    /*mise en forme des éléments"information" */
+    /*formatting of "information" elements */
 
     #information 
     {
@@ -901,26 +886,26 @@ footer
         font-weight: 400;
         margin: 10px 0 10px 10px;
     }
-    /* mise en forme de l'icone */
+    /* formatting of the icon */
 
     #information i
     {
         padding: 8px 12px;
     }
 
-                            /* Sections populaires et hébergements */
+                            /* Popular sections and accommodation */
 
-    /* Alignement et inversion des sections populaires et hébergements */
+    /* Alignment and inversion of popular sections and accommodation */
 
     .accomodations-popular
     {
        flex-flow: column-reverse nowrap;
     }
 
-                                        /*Section Populaires */
+                                        /*Popular section */
 
-    /* Dimensionnement, marges et arrondis de bordures */
-    /* Marges à 0 car chrome en applique ? */ 
+    /* Sizing, margins and rounding of border */
+    /* Margins at 0 because chrome applies? */ 
 
     .popular
     {
@@ -930,7 +915,7 @@ footer
         border-radius: 0;
     }
 
-    /* Mise en forme du titre populaires */
+    /* Formatting the popular title */
 
     .popular-title
     {
@@ -938,15 +923,14 @@ footer
         margin: 0 45vw 20px 0;
     }
 
-    /* Mise en forme des articles */ 
+    /* Formatting of articles */ 
 
     .popular-article 
     {
-        font-size: 0.9em;
-        
+        font-size: 0.9em;   
     }
 
-    /* Mise en forme des images "populaires" */
+    /* Formatting of "popular" images */
 
     .img-popular
     {
@@ -954,32 +938,30 @@ footer
         height: 140px;       
     }
 
-    /* Mise en forme du titre des articles populaires */
+    /* Formatting of popular article titles */
 
     .popular-article h3
     {
         margin: 0 0 10px 10px;
     }
 
-    /* Mise en forme des paragraphes */
+    /* Formatting of paragraphs */
 
     .popular-article p
     {
         margin: 0 0 0 10px;
     }
 
-    /*Mise en formes des étoiles dans les articles */
+    /*Formatting star */
 
     .star
     {
         margin: 0 0 0 20px;
     }
 
-    
+                                   /* Accommodation Section */
 
-                                   /* Section Hebergements */
-
-    /* Mise en forme de la section Hébergements */
+    /* Formatting the Accommodation section */
 
     .accomodations-section
     {
@@ -994,7 +976,7 @@ footer
     {
         padding: 0;
     }
-    /* Mise en forme des articles */
+    /* Formatting of articles */
 
     .accomodations-article
     {
@@ -1014,14 +996,14 @@ footer
         margin-left: 20px;
     }
 
-    /* Mise en forme des images */
+    /* Formatting of images */
 
     .img-accomodations
     {
         height: 110px;
     }
 
-    /* Mise en forme du titre de la section */
+    /* Formatting the section title */
 
     #hebergements
     {
@@ -1029,7 +1011,7 @@ footer
         margin: 0 0 10px 20px;
     }
 
-    /* Mise en forme de "Afficher Plus " en bas de la section hébergements */
+    /* Formatting of "Show More " at the bottom of the accommodation section */
 
     #more
     {
@@ -1037,9 +1019,9 @@ footer
         font-size: .9em;
     }
 
-                                      /* Section Activités */
+                                      /* Activities section */
 
-    /* Alignement et Mise en forme de la section Activités */
+    /* Alignment and Formatting of the Activities section */
 
     .activities-section
     {
@@ -1048,7 +1030,7 @@ footer
         margin: 0 ;   
     }
 
-    /* Mise en forme du titre de la section */
+    /* Formatting the section title */
 
     .activities-section h2
     {
@@ -1056,7 +1038,7 @@ footer
         margin: 0 0 0 10px;
     }
 
-    /* Mise en forme du conteneur des articles */
+    /* Formatting the Item Container */
 
     .activities
     {
@@ -1065,7 +1047,7 @@ footer
         margin: 10px;
     }
 
-    /* Mise en forme des articles */
+    /* Formatting of articles */
 
     .activities-article
     {
@@ -1073,7 +1055,7 @@ footer
         margin: 10px 0 10px 0;   
     }
 
-    /* Mise en forme des articles "seuls" (1 par colonne en desk) */
+    /* Formatting of "single" items (1 per desk column) */
 
     .only
     {
@@ -1081,7 +1063,7 @@ footer
         padding: 0;
     }
 
-    /*Dimensionnement des grandes photos */
+    /*Sizing of large pics */
 
     .img-activities-height
     {
@@ -1089,14 +1071,14 @@ footer
         width: 100%;
     }
 
-    /* Dimensionnement des petites photos */
+    /* Sizing of small pics */
 
     .img-activities
     {
         height: 130px;
     }
 
-    /* Taille des titres des articles */
+    /* Size of item titles */
 
     .activities-article h3
     {
@@ -1105,7 +1087,7 @@ footer
 
                                         /* Footer */
 
-    /* Alignement des éléments du footer */
+    /* Alignment of Footer Elements */
 
     footer
     {
@@ -1115,7 +1097,7 @@ footer
         padding-left: 20px;
     }
 
-    /* Mise en forme des éléments du footer */
+    /* Formatting the elements of the footer */
 
     .footer-field
     {
@@ -1124,7 +1106,7 @@ footer
     }
 }
 
-                                /* MEDIA QUERIES pour écrans entre 480px et 768px */
+                                /* MEDIA QUERIES for screens between 480px and 768px */
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 768px)
 {
@@ -1153,7 +1135,7 @@ footer
         font-weight: bold;
     }
 
-        /* mise en forme logo et lien "s'inscrire"*/
+        /*  formatting logo and "register" link*/
 
     #first-line
     {
@@ -1162,7 +1144,7 @@ footer
         align-items: center;
         margin: 10px;      
     }
-    /* Enlèvement des soulignements des liens*/
+    /* Removal of underline link s*/
 
     .mobile a
     {
@@ -1170,7 +1152,7 @@ footer
         font-size: 1.2em;
     }
 
-    /* mise en forme des éléments "hébergements et "activités"*/
+    /* formatting of the elements "accommodation and "activities"*/
 
     #second-line 
     {
@@ -1194,9 +1176,7 @@ footer
         padding: 0 70px 0 70px;
         color: #585656;
     }
-
-    /* mise en forme du texte"activités" */
-
+  
      .overline-accomodations-mob, .overline-activities-mob
      {
          height: 2px;
@@ -1222,8 +1202,7 @@ footer
 
     .search
     {
-        font-size: .9em;
-        
+        font-size: .9em;    
     }
 
     .filters
@@ -1357,8 +1336,7 @@ footer
 }
 
 
-
-                            /* MEDIA QUERIES pour écrans entre 768 px et 1024px */
+                            /* MEDIA QUERIES for screens between 768 px and 1024px */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
 {
@@ -1522,7 +1500,7 @@ footer
 }
 
 
-                                      /* MEDIA QUERIES écran entre 1024 et 1480px */
+                                      /* MEDIA QUERIES screen between 1024 and 1480px */
 
     
 
@@ -1534,7 +1512,6 @@ footer
         margin-right: 20px;
     }
 
-    
     .link
     {
         width: 50%;
