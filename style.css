@@ -53,73 +53,59 @@ nav a
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
-	width: 35%;
+	width: 40%;
 }
 
-.overline-accomodations, .overline-activities
+#link-element
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;	  
+}
+
+.overline-element
 {
 	height: 3px;
 	background-color: #f2f2f2;
 	margin:0 0 40px 0;
 	width: 100%;
-	color: #ffffff;
 }
 
-#link-accomodations
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 33%;	
-}
-
-#link-accomodations > .overline-accomodations
-{
-	background-color: #0065fc;
-}
-
-#link-accomodations:focus > .overline-accomodations
-{
-	background-color:#0065fc;
-}
-
-#accomodations:focus, #accomodations:visited
-{
-	color: #0065fc;
-}
-
-#accomodations:hover
-{
-    font-weight: 600;
-}
-
-#link-activities
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 33%;
-}	
-
-#link-activities:hover > .overline-activities
-{
-	background-color: #0065fc;
-}
-
-#link-activities:visited > .overline-activities
-{
-	background-color: #0065fc;
-}
-
-#activities
+.element
 {
 	color: #000000;
+    padding: 0 50px;
 }
 
-#activities:hover
+.element:visited
+{
+	color: #0065fc;
+}
+
+ .element:hover
 {
 	color: #0065fc;
     font-weight: 600;
+}
+
+.link-element:visited >.overline-element:visited
+{
+	background-color: #0035fc;
+}
+
+.link-element:hover >.overline-element
+{
+	background-color: #0065fc;
+}
+
+.active-link >.overline-element
+{
+    background-color: #0065fc;
+}
+.active-link > .element
+{
+    color: #0065fc;
 }
 
 #sign-up 
@@ -160,7 +146,7 @@ h1
 
 .search
 {
-    display: flex;
+    display: inline-flex;
    
 }
 
@@ -421,27 +407,28 @@ h1
 .popular
 {
     background-color: #f2f2f2;
-    width: 30%;
-    margin-left: 30px;
+    width: 25%;
+    margin-left: 40px;
     border-radius: 30px;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 25px;
 }
 
 /* Titre de la section populaire (incluant titre et icone ). Alignement des 2 éléments entre eux et marge extérieure */
 
-#popular-title
+.popular-title
 {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 10px 20px 20px 20px;
+    margin: 5vh 8vw 4vh .5vw;
+    font-size: 1.4em;
 }
 
 /* Dimensions de l'icône à coté du titre de la section "populaires" */
 
-#popular-title i
+#popular-title-ico
 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 /* Alignements des éléments, couleur de fond, marges extérieures et arrondis des bordures */
@@ -454,14 +441,14 @@ h1
     margin-bottom: 30px;
     padding: 5px;
     border-radius: 20px;
-    width: 95%;
+    width: 90%;
 }
 
 /* Modification des dimensions des images, arrondis des bordures et marges extérieures */
 
 .img-popular
 {
-    width: 180px;
+    width: 200px;
     height: 200px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -673,7 +660,6 @@ footer
 {
     display: flex;
     flex-flow: column nowrap;
-    list-style: none;
     line-height: 2em;
     text-decoration: none;
     color: rgb(61, 60, 60);
@@ -684,6 +670,15 @@ footer
 {
     font-size: 1.2em;
     margin-bottom: 0;  
+}
+
+.footer-field ul
+{
+    padding: 0;
+}
+.footer-field li
+{
+    list-style: none;
 }
 
 /* Marge extérieure gauche des titres pour aligner avec les éléments de liste */ 
@@ -719,6 +714,11 @@ footer
         font-weight: bold;
     }
 
+    #sign-up-mob
+    {
+        color: #0065fc;
+    }
+
     /* mise en forme logo et lien "s'inscrire"*/
 
     #first-line
@@ -741,6 +741,7 @@ footer
     {
         display: flex;
         justify-content: center;
+        width: 80%;
     }
 
     #accomodations-link
@@ -802,7 +803,6 @@ footer
         border-bottom: 1px solid #f2f2f2;
         border-radius: 20px;
         margin-top: 10px;
-       
     }
 
     /* Mise en forme de l'icone de recherche */
@@ -869,7 +869,7 @@ footer
 
     #filters-title
     {
-        margin: 0 100% 0 0;       
+        margin: 0 60% 0 0;       
     }
 
     /* Mise en forme du texte */
@@ -926,24 +926,24 @@ footer
     {
         width: 100%;
         margin: 0;
-        padding: 20px 0 20px 0;
+        padding: 20px 10px 20px 10px;
         border-radius: 0;
     }
 
     /* Mise en forme du titre populaires */
 
-    #popular-title
+    .popular-title
     {
-        font-size: 1em;
-        margin: 0 20px 20px 0;
+        font-size: 1.2em;
+        margin: 0 45vw 20px 0;
     }
 
     /* Mise en forme des articles */ 
 
     .popular-article 
     {
-        font-size: 0.8em;
-        margin: 10px 0 10px 0;
+        font-size: 0.9em;
+        
     }
 
     /* Mise en forme des images "populaires" */
@@ -1153,7 +1153,7 @@ footer
         font-weight: bold;
     }
 
-    /* mise en forme logo et lien "s'inscrire"*/
+        /* mise en forme logo et lien "s'inscrire"*/
 
     #first-line
     {
@@ -1176,6 +1176,11 @@ footer
     {
         display: flex;
         justify-content: center;
+    }
+
+    #sign-up-mob
+    {
+        color: #0065fc;
     }
 
     #accomodations-link
@@ -1218,7 +1223,7 @@ footer
     .search
     {
         font-size: .9em;
-        justify-content: center;
+        
     }
 
     .filters
@@ -1231,7 +1236,7 @@ footer
     #filters-title
     {
         font-size: 1.2em;
-        margin: 0 100% 0 10px;
+        margin: 0 60% 0 10px;
     }
 
     .filters ul
@@ -1364,8 +1369,9 @@ footer
     
     header, main
     {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
     }
 
     .link
@@ -1377,6 +1383,16 @@ footer
     {
         font-size: 1.5em;
         text-align: center;
+    }
+
+    h2
+    {
+        font-size: 1.1em;
+    }
+
+    #sign-up-mob
+    {
+        color: #0065fc;
     }
 
     #actions
@@ -1408,7 +1424,7 @@ footer
     {
         margin-top: 10px;
     }
-
+    
     #information
     {
         font-size: 1.1em;
@@ -1429,6 +1445,7 @@ footer
     .accomodations
     {
         flex-flow: row wrap;
+        padding: 0 5px 0 5px;
     }
 
     .accomodations-article
@@ -1484,14 +1501,18 @@ footer
     .activities-article-bottom
     {
         background-color: #f2f2f2;
-        margin-top:5px;
+        margin-top:25px;
+    }
+    .activities-article-bottom-right
+    {
+        margin-top: 35px;
     }
 
     footer
     {
         flex-flow:  row wrap;
         justify-content: space-around;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .footer-field
@@ -1500,9 +1521,12 @@ footer
     }
 }
 
-                                      /* MEDIA QUERIES écran entre 1024 et 1280px */
 
-@media screen and (min-width: 1024px) and (max-width: 1280px)
+                                      /* MEDIA QUERIES écran entre 1024 et 1480px */
+
+    
+
+@media screen and (min-width: 1024px) and (max-width: 1480px)
 {
     header, main
     {
@@ -1510,6 +1534,7 @@ footer
         margin-right: 20px;
     }
 
+    
     .link
     {
         width: 50%;
@@ -1527,7 +1552,7 @@ footer
     
     .accomodations-section
     {
-        width: 60%;
+        width: 70%;
         padding: 0;
     }
 
@@ -1548,7 +1573,28 @@ footer
 
     .popular
     {
-        width: 40%;
+        width: 30%;
+    }
+    .popular-title
+    {
+        margin:30px 6vw 20px 0;
+        font-size: 1.1em;
+    }
+
+    .popular p
+    {
+        padding-bottom: 30px;
+    }
+
+    .popular-article
+    {
+        max-width: 98%;
+    }
+
+    .img-popular
+    {
+        min-width: 100%;
+        max-height: 250px;
     }
     
     .activities
