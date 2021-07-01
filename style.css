@@ -227,6 +227,8 @@ h1
 #filters-title
 {
     margin-right: 50px;
+    font-size: 1.2em;
+    border: none;
 }
 
 /* Alignments of all filter list items */
@@ -679,7 +681,7 @@ footer
 
                                                     /* Media queries mobile */
 
-@media only screen and (max-device-width: 480px) 
+@media only screen and (max-width: 480px) 
 {
     /* Removal of the margin applied in "desk" */
    
@@ -700,13 +702,13 @@ footer
     .mobile
     {
         display: contents;
-        font-size: 0.8em;
-        font-weight: bold;
+        font-size: 0.9em;
     }
 
     #sign-up-mob
     {
         color: #0065fc;
+        font-weight: bold;
     }
 
     /* formatting logo and "register" link*/
@@ -731,18 +733,18 @@ footer
     {
         display: flex;
         justify-content: center;
-        width: 80%;
+        
     }
 
     #accomodations-link
     {
-        padding: 0 50px 0 50px;
+        padding: 0 40px 0 50px;
         color: #0065fc;
     }
 
     #activities-link
     {
-        padding: 0 50px 0 50px;
+        padding: 0 30px 0 50px;
         color: #585656;
     }
 
@@ -789,6 +791,7 @@ footer
 
     .search
     {
+        display: inline-flex;
         border-top:1px solid #f2f2f2;
         border-bottom: 1px solid #f2f2f2;
         border-radius: 20px;
@@ -829,6 +832,8 @@ footer
     { 
        border: none;
        font-size: 1em;
+       width: 85%;
+       padding-left: 10px;
     }
 
                                          /* FILTERS*/
@@ -911,7 +916,7 @@ footer
     {
         width: 100%;
         margin: 0;
-        padding: 20px 10px 20px 10px;
+        padding: 20px 0 20px 0;
         border-radius: 0;
     }
 
@@ -919,15 +924,16 @@ footer
 
     .popular-title
     {
-        font-size: 1.2em;
-        margin: 0 45vw 20px 0;
+        font-size: 1.1em;
+        margin: 0 35vw 20px 10px;
     }
 
     /* Formatting of articles */ 
 
     .popular-article 
     {
-        font-size: 0.9em;   
+        font-size: 0.9em; 
+        margin: 10px;
     }
 
     /* Formatting of "popular" images */
@@ -1035,7 +1041,7 @@ footer
     .activities-section h2
     {
         font-size: 1.2em;
-        margin: 0 0 0 10px;
+        margin: 0 0 20px 10px;
     }
 
     /* Formatting the Item Container */
@@ -1108,7 +1114,7 @@ footer
 
                                 /* MEDIA QUERIES for screens between 480px and 768px */
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 768px)
+@media only screen and (min-width: 480px) and (max-width: 768px)
 {
     body
     {
@@ -1466,19 +1472,8 @@ footer
         font-size: 1.2em;
     }
 
-    .only
-    {
-        background-color: #f2f2f2;
-    }
-
-    .activities-article-top
-    {
-        background-color: #f2f2f2;
-    }
-
     .activities-article-bottom
     {
-        background-color: #f2f2f2;
         margin-top:25px;
     }
     .activities-article-bottom-right
